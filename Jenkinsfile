@@ -9,9 +9,6 @@ pipeline {
     options {
         disableConcurrentBuilds()  
     }
-    environment {
-        ssh_credentials = "dotnet_host"
-    }
     agent any
     stages {
         stage('Git Checkout Project') {
